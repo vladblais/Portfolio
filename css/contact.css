@@ -1,0 +1,68 @@
+#form {
+    background: linear-gradient(to right,
+            var(--gradient-one) 0%,
+            var(--gradient-two) 100%);
+    padding: 2px;
+    border-radius: 0.5em;
+    width: 600px;
+}
+
+.bg {
+    padding: 3em;
+    border-radius: 0.5em;
+    background-color: var(--bg-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    padding: 8px;
+    margin-bottom: 0.6em;
+    width: 95%;
+}
+
+textarea {
+    border: none;
+    padding: 8px;
+    width: 95%;
+    resize: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form div {
+    font-size: larger;
+    display: inline;
+}
+
+/*bouton envoyer*/
+#bouton {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    margin: 10px;
+    background-color: var(--gradient-two);
+    color: var(--links);
+    width: 80px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--gradient-two-dark);
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    #form {
+        padding: 8%;
+        width: 85%;
+        height: 85%;
+    }
+}

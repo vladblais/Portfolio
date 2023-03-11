@@ -1,0 +1,44 @@
+body {
+    display: grid;
+    grid-template: 75px 1fr 100px / 1fr ;
+}
+
+section {
+    height: 45em;
+    display: grid;
+    grid-template: 1fr 10fr 1fr / 2fr 8fr 2fr
+}
+
+.content {
+    grid-area: 2 / 2 / 2 / 2;
+    display: grid;
+    border-radius: 10px;
+}
+
+.color {
+    margin-top: 2em;
+    padding: 2px;
+    background: linear-gradient(to right,
+            var(--gradient-one) 0%,
+            var(--gradient-two) 100%);
+    border-radius: 10px;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 3em;
+}
+
+.title,
+.text {
+    color: var(--links);
+    text-align: center;
+}
+
+.title {
+    font-size: xx-large;
+}

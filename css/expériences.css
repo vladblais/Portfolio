@@ -1,0 +1,109 @@
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.bg {
+  padding: 2px;
+  background: linear-gradient(to right,
+      var(--gradient-one) -50%,
+      var(--gradient-two) 150%);
+  border-radius: 10px;
+  transition: .5s ease-in-out;
+}
+
+.bg:hover {
+  cursor: pointer;
+  transform: translateY(10px);
+}
+
+#expériences .container {
+  display: flex;
+  padding: 72px 24px 24px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  color: var(--links);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  margin: 0px;
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.1);
+  transition: .5s ease-in-out;
+}
+
+.card figure {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: -60px;
+  position: relative;
+  background: linear-gradient(to right,
+      var(--gradient-one) -50%,
+      var(--gradient-two) 150%);
+  padding: 2px;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover figure {
+  transform: translateY(-20px);
+}
+
+.card figure img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .title {
+  margin: 0px;
+  margin-top: .2em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card .content {
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right,
+          var(--gradient-one) 0%,
+          var(--gradient-two) 100%);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.card:hover .hover-underline-animation::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+ .card:hover .hover-underline-animation {
+  text-decoration: none !important;
+}

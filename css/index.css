@@ -1,0 +1,122 @@
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    color: var(--links);
+
+}
+
+section .container {
+    width: 90%;
+}
+
+.container h1 {
+    font-size: 90px;
+    background: linear-gradient(to right,
+            var(--gradient-one) 0%,
+            var(--gradient-two) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 350ms ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    .container h1 {
+        font-size: 90px;
+        background: linear-gradient(to right,
+                var(--gradient-one) 0%,
+                var(--gradient-two) 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 350ms ease-in-out;
+    }
+}
+
+#présentation {
+    display: flex;
+    flex-direction: column;
+}
+
+#présentation p {
+    text-align: center;
+}
+
+#présentation img {
+    width: 0.8em;
+}
+
+#exp-index {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg {
+    padding: 2px;
+    background: linear-gradient(to right,
+            var(--gradient-one) -50%,
+            var(--gradient-two) 150%);
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+.bg:hover {
+    cursor: pointer;
+    transform: translateX(10px);
+}
+
+#exp-index .retex {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5em;
+
+}
+
+.card {
+    color: var(--links);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    margin: 0px;
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in-out;
+}
+
+.card figure {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-left: -72px;
+    position: relative;
+    background: linear-gradient(to right,
+            var(--gradient-one) -50%,
+            var(--gradient-two) 150%);
+    padding: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover figure {
+    transform: translateX(-20px);
+}
+
+.card figure img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .title {
+    margin: 0px;
+    margin-top: .2em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card .content {
+    text-align: center;
+    line-height: 1.5;
+    padding-right: 1.5em;
+}
