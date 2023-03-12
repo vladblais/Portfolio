@@ -42,12 +42,16 @@ a:hover {
     cursor: pointer;
 }
 
-.hover-underline-animation {
+.hover-underline-animation,
+#exp-index .card p:last-child,
+#exp-index .card:hover .hover-underline-animation{
     display: inline-block;
     position: relative;
 }
 
-.hover-underline-animation::after {
+.hover-underline-animation::after, 
+#exp-index .card p:last-child::after,
+#exp-index .card:hover .hover-underline-animation::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -62,13 +66,20 @@ a:hover {
     transition: transform 0.25s ease-out;
 }
 
-.hover-underline-animation:hover::after {
+.hover-underline-animation:hover::after,
+#exp-index .card:hover p:last-child::after,
+#exp-index .card:hover .hover-underline-animation::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.hover-underline-animation:hover {
+.hover-underline-animation:hover,
+#exp-index .card p:last-child:hover {
     text-decoration: none !important;
+}
+
+#exp-index .card p:last-child::after {
+    transition: transform 0.25s ease-out .15s;
 }
 
 * {

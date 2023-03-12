@@ -1,6 +1,9 @@
 section {
+    padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem;
     color: var(--links);
 
@@ -122,4 +125,6 @@ section .container {
 }
 
 .content p:last-child {
+    margin-top: .5em;
+    text-align: end;
 }
