@@ -1,30 +1,53 @@
 section {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
     color: var(--links);
-
 }
 
 section .container {
     width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.container h1 {
+#left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#left h1 {
     font-size: 90px;
     background: linear-gradient(to right,
             var(--gradient-one) 0%,
-            var(--gradient-two) 20%);
+            var(--gradient-two) 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 350ms ease-in-out;
 }
 
 @media screen and (max-width: 700px) {
-    .container h1 {
+    #left h1 {
         font-size: 90px;
         background: linear-gradient(to right,
                 var(--gradient-one) 0%,
@@ -127,4 +150,26 @@ section .container {
 .content p:last-child {
     margin-top: .5em;
     text-align: end;
+}
+
+
+#right img{
+    width: 30em;
+    height: 40em;
+    object-fit: cover;
+    border-radius: 10%;
+    margin : 0 0 0 30em;
+    z-index: 1;
+    user-select: none;
+}
+
+#right #css-doodle {
+    position: absolute;
+    z-index: 0;
+}
+
+#css-doodle css-doodle {
+    width: 37em;
+    height: 37em;
+    transform: translateX(-5em);
 }

@@ -49,29 +49,49 @@
 
     <section>
         <div class="container">
-            <div id="présentation">
-                <h1>Salut!</h1>
-                <p>Moi c'est Vladimir</p>
-                <p>et je suis étudiant en informatique !</p>
-                <div>
-                    <a class="hover-underline-animation" href="./présentation.html">En savoir plus <img src="img/arrow.png" alt="flèche"></a>
+            <div id="left">
+                <div id="présentation">
+                    <h1>Salut!</h1>
+                    <p>Moi c'est Vladimir</p>
+                    <p>et je suis étudiant en informatique !</p>
+                    <div>
+                        <a class="hover-underline-animation" href="./présentation.html">En savoir plus <img src="img/arrow.png" alt="flèche"></a>
+                    </div>
+                </div>
+                <div id="exp-index">
+                    <h2>Mes expériences</h2>
+                    <div class="retex">
+                        <div class="bg">
+                            <a class="card" href="./retex/biosphere.html">
+                                <figure>
+                                    <img alt="biosphere7" src="./img/biosphere-prev.png" />
+                                </figure>
+                                <div class="content">
+                                    <p class="title hover-underline-animation">Biosphère7</p>
+                                    <p>Implémentation des règles d'un jeu de plateau.</p>
+                                    <p>En savoir plus</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="exp-index">
-                <h2>Mes expériences</h2>
-                <div class="retex">
-                    <div class="bg">
-                        <a class="card" href="./retex/biosphere.html">
-                            <figure>
-                                <img alt="biosphere7" src="./img/biosphere-prev.png" />
-                            </figure>
-                            <div class="content">
-                                <p class="title hover-underline-animation">Biosphère7</p>
-                                <p>Implémentation des règles d'un jeu de plateau.</p>
-                                <p>En savoir plus</p>
-                            </div>
-                        </a>
-                    </div>
+            <div id="right">
+                <img src="./img/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="portrait">
+                <div id="css-doodle">
+                    <css-doodle click-to-update>
+                        <style>
+                            :doodle {
+                                @shape : circle;
+                            }
+                            @grid: 24 / 80vmin; 
+                            background: hsl(@rn(360), 70%, 70%);
+                            transition: @r(.5s) ease;
+                            transform: 
+                                scale(@rn(0, 1, 3)) 
+                                skew(@rn(-30deg, 30deg, 3));
+                        </style>
+                    </css-doodle>
                 </div>
             </div>
         </div>
@@ -104,6 +124,8 @@
         </div>
     </footer>
 
+
+    <script src="https://unpkg.com/css-doodle@0.34.5/css-doodle.min.js"></script>
 </body>
 
 
