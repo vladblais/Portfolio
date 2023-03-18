@@ -96,7 +96,7 @@ section {
           var(--gradient-one) 0%,
           var(--gradient-two) 100%);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out 0.2s;
 }
 
 .card:hover .hover-underline-animation::after {
