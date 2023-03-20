@@ -166,10 +166,10 @@ section .container {
 
 
 #right img{
-    width: 30em;
-    height: 40em;
+    width: 37em;
+    height: 37em;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 50%;
     margin : 0 0 0 30em;
     z-index: 1;
     user-select: none;
@@ -177,6 +177,7 @@ section .container {
         var(--gradient-one) -50%,
         var(--gradient-two) 150%);
     padding: 3px;
+    transform: translateY(2em);
     
 }
 
@@ -188,6 +189,6 @@ section .container {
 #css-doodle css-doodle {
     width: 37em;
     height: 37em;
-    transform: translateX(-5em);
+    transform: translate(5em, -3em);
     cursor: pointer;
 }
