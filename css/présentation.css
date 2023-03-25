@@ -1,18 +1,26 @@
-body {
-    display: grid;
-    grid-template: 75px 1fr 100px / 1fr ;
-}
-
 section {
-    height: 45em;
-    display: grid;
-    grid-template: 1fr 10fr 1fr / 2fr 8fr 2fr
+    padding: 0 10% 0 10%;
 }
 
 .content {
-    grid-area: 2 / 2 / 2 / 2;
-    display: grid;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2.6em;
+}
+
+.title,
+.text {
+    color: var(--links);
+    text-align: center;
+}
+
+.text {
+    font-size: 1.15em;
 }
 
 .color {
@@ -31,14 +39,4 @@ section {
     background-color: var(--bg-color);
     border-radius: 10px;
     padding: 3em;
-}
-
-.title,
-.text {
-    color: var(--links);
-    text-align: center;
-}
-
-.title {
-    font-size: xx-large;
 }
