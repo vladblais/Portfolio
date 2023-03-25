@@ -52,14 +52,14 @@
             <div id="left">
                 <div id="présentation">
                     <h1>Salut!</h1>
-                    <p>Moi c'est Vladimir, étudiant en informatique</p>
-                    <p>et bienvenue sur mon Portfolio !</p>
+                    <p>Bienvenue sur mon Portfolio ! Je m'appelle Vladimir Blais</p>
+                    <p>et je suis étudiant en informatique.</p>
                     <div class="more">
                         <a class="hover-underline-animation" href="./présentation.html">En savoir plus <img src="img/arrow.png" alt="flèche"></a>
                     </div>
                 </div>
                 <div id="exp-index">
-                    <h2>Mes expériences</h2>
+                    <h2>Ma dernière expérience</h2>
                     <div class="retex">
                         <div class="bg">
                             <a class="card" href="./retex/biosphere.html">
@@ -74,6 +74,9 @@
                             </a>
                         </div>
                     </div>
+                    <div class="more">
+                        <a class="hover-underline-animation" href="./expériences.html">Voir toutes mes expériences <img src="img/arrow.png" alt="flèche"></a>
+                    </div>
                 </div>
             </div>
             <div id="right">
@@ -84,8 +87,8 @@
                             @shape : circle;
                         }
                         @grid: 24 / 80vmin; 
-                        background: hsl(@rn(260, 450), 70%, 70%);
-                        transition: @r(.5s) ease;
+                        background: hsl(@rn(260, 450), 70%, 65%);
+                        transition: @r(.5s) ease @r(.3s);
                         transform: 
                             scale(@rn(0, 1, 3)) 
                             skew(@rn(-30deg, 30deg, 3));

@@ -14,7 +14,10 @@ section .container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
+
+/* #region Left part of the home page */
 
 #left {
     display: flex;
@@ -22,17 +25,7 @@ section .container {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
     width: 45%;
-}
-
-#right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 #left h1 {
@@ -47,11 +40,8 @@ section .container {
     text-align: center;
 }
 
-@media screen and (max-width: 700px) {
-    
-}
-
 #présentation {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -64,26 +54,19 @@ section .container {
     font-size: larger ;
 }
 
-#présentation p:nth-child(3) {
-    /* text-align: end ; */
-    margin-bottom: 3em;
+.more {
+    display: flex;
+    justify-content: end;
+    margin: 3em 3em 1em 0;
+    padding-left: 0.8em;
 }
 
-#présentation .more {
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-#présentation .more a {
-    align-self: flex-end;
-}
-
-#présentation img {
+.more img {
     width: 0.8em;
 }
 
 #exp-index {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -125,6 +108,7 @@ section .container {
 .card figure {
     width: 140px;
     height: 140px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     margin-left: -72px;
     position: relative;
@@ -143,6 +127,7 @@ section .container {
     border-radius: inherit;
     width: 100%;
     height: 100%;
+    aspect-ratio: 1/1;
     object-fit: cover;
 }
 
@@ -164,21 +149,31 @@ section .container {
     text-align: end;
 }
 
+/* #endregion Left part of the home page */
+
+/* #region Right part of the home page */
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+}
 
 #right img{
     width: 37em;
-    height: 37em;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
-    margin : 0 0 0 30em;
     z-index: 1;
     user-select: none;
     background-image: linear-gradient(to right,
         var(--gradient-one) -50%,
         var(--gradient-two) 150%);
     padding: 3px;
-    transform: translateY(2em);
-    
+    transform: translate(-5em,2em);
 }
 
 #right #css-doodle {
@@ -189,6 +184,8 @@ section .container {
 #css-doodle css-doodle {
     width: 37em;
     height: 37em;
-    transform: translate(5em, -3em);
+    transform: translateY(-3em);
     cursor: pointer;
 }
+
+/* #endregion Right part of the home page*/
