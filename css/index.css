@@ -49,9 +49,8 @@ section .container {
 
 #présentation p {
     text-align: center;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 1.5em;
+    padding: 0 2em;
+    margin: 0 0 1.5em 0;
     font-size: larger ;
 }
 
@@ -69,6 +68,10 @@ section .container {
 }
 
 .bg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding: 2px;
     background: linear-gradient(to right,
             var(--gradient-one) -50%,
@@ -153,6 +156,7 @@ section .container {
 /* #endregion Left part of the home page */
 
 /* #region Right part of the home page */
+
 #right {
     display: flex;
     flex-direction: column;
@@ -190,3 +194,86 @@ section .container {
 }
 
 /* #endregion Right part of the home page*/
+
+/* #region responsive */
+
+@media screen and (max-width: 1366px) {
+
+    section .container {
+        width: 100%;
+        justify-content: space-around; 
+    }
+
+    #right img {
+        width: 27em;
+        transform: translate(0, 0);
+    }
+
+    .retex {
+        padding: 72px 24px 24px;
+    }
+
+    .bg:hover {
+        cursor: pointer;
+        transform: translateY(10px);
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card figure {
+        margin: -60px 0 0 0;
+    }
+
+    .card:hover figure {
+        transform: translateY(-20px);
+    }
+
+    .card .content {
+        padding: 0 1.5em 0 1.5em;
+    }
+
+    .card .content p:last-child {
+        margin-top: 0;
+    }
+
+    .more {
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    #css-doodle {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+
+    section .container {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around; 
+    }
+
+    #right {
+        order: 1;
+    }
+
+    #right img {
+        width: 14em;
+    }
+
+    #left {
+        order: 2;
+        width: 100%;
+        margin: 0;
+    }
+
+    #left h1 {
+        font-size: 70px;
+    }
+}
+
+/* #endregion responsive */
