@@ -26,6 +26,11 @@ body {
     color: var(--links)
 }
 
+nav,
+footer {
+    z-index: 1;
+}
+
 /* Style css pour la section */
 
 section {
@@ -33,6 +38,7 @@ section {
     align-items: center;
     flex-direction: column;
     margin: 1em;
+    z-index: 0;
 }
 
 /* Style pour les liens */
@@ -46,6 +52,8 @@ a:hover {
     cursor: pointer;
 }
 
+/* #region hover-underline-animation */
+/* #region 1st anim */
 .hover-underline-animation,
 #exp-index .card p:last-child,
 #exp-index .card:hover .hover-underline-animation{
@@ -85,6 +93,62 @@ a:hover {
 #exp-index .card p:last-child::after {
     transition: transform 0.25s ease-out .15s;
 }
+/* #endregion 1st anim */
+/* #region 2nd anim */
+
+.hover-underline-effect {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-effect::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--bg-color);
+    transform: scalex(0);
+  }
+  
+  .hover-underline-effect::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right,
+            var(--gradient-one) 0%,
+            var(--gradient-two) 100%);
+  }
+  
+  .hover-underline-effect:hover::after {
+    animation: .5s anim;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform-origin: top left;
+      transform: scalex(0);
+    }
+    50% {
+      transform-origin: top left;
+      transform: scalex(1);
+    }
+    51% {
+      transform-origin: top right;
+      transform: scalex(1);
+    }
+    100% {
+      transform-origin: top right;
+      transform: scalex(0);
+    }
+  }
+
+/* #endregion 2nd anim */
+/* #endregion hover-underline-animation */
 
 #tsparticles {
     position: fixed;

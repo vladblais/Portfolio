@@ -53,6 +53,25 @@ const options = {
       }
     },
     detectRetina: true,
+    responsive: [{
+      maxWidth: 411,
+      options: { 
+        particles: {
+          number: {
+            value: 20, // this sets the number of particles
+          }
+        }
+      }
+  }, {
+      maxWidth: 768,
+      options: { 
+        particles: {
+          number: {
+            value: 60, // this sets the number of particles
+          }
+        }
+      }
+  }]
   };
 
   // this loads the particles
