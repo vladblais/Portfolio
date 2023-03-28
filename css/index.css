@@ -62,7 +62,7 @@ section .container {
 
 .more {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     margin: 3em 3em 1em 0;
     padding-left: 0.8em;
 }
