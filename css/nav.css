@@ -196,9 +196,12 @@ nav * img {
         order: 3;
     }
 
+    #lang_container {
+        transform: translateX(-.5em);
+    }
+
     #lang{
         margin: 0;
-        transform: translateX(-.5em);
     }
 
     footer img {

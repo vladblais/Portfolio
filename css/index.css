@@ -276,4 +276,36 @@ section .container {
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    #left h1 {
+        font-size: 50px;
+    }
+
+    #right img {
+        width: 12em;
+    }
+
+    #left {
+        margin: 0;
+    }
+
+    #left h1 {
+        font-size: 50px;
+    }
+
+    #left p {
+        font-size: 18px;
+    }
+
+    #left .more {
+        margin: 0;
+    }
+
+    #left .more a {
+        font-size: 18px;
+    }
+    
+}
+
 /* #endregion responsive */
