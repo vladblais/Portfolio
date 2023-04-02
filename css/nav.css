@@ -74,23 +74,6 @@ nav * img {
     margin: 0 1em 0 .5em;
 }
 
-/*bouton contact*/
-#right_menu a.button {
-    background-color: var(--gradient-two);
-    border-radius: 4px;
-    padding: 0.5em;
-    text-decoration: none;
-    color: var(--links);
-    height: 100%;
-    transition: 0.3s;
-}
-
-#right_menu a.button:hover {
-    background-color: var(--gradient-two-dark);
-}
-
-
-
 .dropdown {
     justify-content: center;
     position: relative;

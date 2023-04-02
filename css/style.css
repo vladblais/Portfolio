@@ -150,6 +150,22 @@ a:hover {
 /* #endregion 2nd anim */
 /* #endregion hover-underline-animation */
 
+/*bouton contact*/
+a.button {
+  background-color: var(--gradient-two);
+  border-radius: 4px;
+  padding: 0.5em;
+  text-decoration: none;
+  color: var(--links);
+  height: 100%;
+  transition: 0.3s;
+}
+
+a.button:hover {
+  background-color: var(--gradient-two-dark);
+}
+
+
 #tsparticles {
     position: fixed;
     width: 100%;

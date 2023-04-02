@@ -5,7 +5,7 @@ section {
     padding: 0 10% 0 10%;
 }
 
-section .container {
+section #retex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ section .container {
     padding: 2px;
 }
 
-.container .bg {
+#retex .bg {
     background: var(--bg-color);
     border-radius: 10px;
     padding: 2em;
@@ -45,6 +45,7 @@ section .container {
 
 #left img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -54,8 +55,6 @@ section .container {
 }
 
 #right,
-#outils,
-#compétences,
 #cdc {
     display: flex;
     flex-direction: column;
@@ -63,20 +62,109 @@ section .container {
     align-items: center;
 }
 
+#cdc {
+    padding: 0 3em;
+}
+
+#cdc  p {
+    text-align: center;
+}
+
 #outils_cpt {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
     width: 100%;
 }
 
+#outils,
+#competences {
+    display: flex;
+    flex-direction: column;
+}
+
+#right h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--links);
+    text-align: center;
+    margin: 0;
+}
+
+#competences,
 #outils {
     width: 50%;
 }
 
-#compétences {
-    width: 50%;
+#outils_cpt ul {
+    margin: 1rem 0 0 2em;
+    padding-left: 1em;
 }
 
+#outils_cpt li {
+    padding-left: .5em;
+}
 
+#outils_cpt li::marker {
+    content: '>';
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+section a.button {
+    margin: 1em 0;
+}
+
+span {
+    margin: 0 .5em;
+    transition: .3s ease-in-out;
+}
+
+a.button:hover span {
+    margin: 0 1em 0 0;
+}
+
+#retour {
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 1366px) {
+    #retex img {
+        width: 30em;
+    }
+    #retex .bg {
+        flex-direction: column;
+    }
+
+    #right,
+    #left {
+        width: 100%;
+    }
+
+    #retex h3 {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #retex img {
+        width: 25em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #retex img {
+        width: 20em;
+    }
+
+    #outils_cpt {
+        flex-direction: column;
+    }
+}

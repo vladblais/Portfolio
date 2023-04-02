@@ -108,3 +108,18 @@ section {
  .card:hover .hover-underline-animation {
   text-decoration: none !important;
 }
+
+@media screen and (max-width: 768px) {
+  #expériences .container {
+    padding: 72px .5em 24px;
+  }
+
+  .card {
+    padding: .5em;
+  }
+  
+  .card .content {
+    padding: 0;
+    width: 90%;
+  }
+}
