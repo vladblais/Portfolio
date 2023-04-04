@@ -201,8 +201,16 @@ a.button:hover span {
         padding: 0 5%;
     }
 
+    section .button {
+        font-size: small;
+    }
+
     #retex .bg {
         padding: 0.5em;
+    }
+
+    #left .title p {
+        margin-bottom: .5em;
     }
 
     #retex figure {
@@ -223,20 +231,53 @@ a.button:hover span {
 }
 
 @media screen and (max-width: 512px) {
+    #tsparticles {
+        display: none;
+    }
+
+    section {
+        padding: 0;
+        margin: 0 1em;
+    }
+
+    section a.button {
+        margin: 2em 0;
+    }
+
+    section #retex {
+        background-color: var(--bg-color);
+        border-radius: 0;
+        width: 100%;
+    }
+
+    #retex .bg {
+        background-color: var(--bg-color);
+        border-radius: 0;
+        width: 100%;
+    }
+
     #retex figure {
         width: 90%;
+    }
+
+    #left .title p {
+        margin-top: .5em;
+    }
+
+    #competences ul {
+        margin-bottom: 1.5em;
     }
 }
 
 @media screen and (max-width: 375px) {
     section {
-        padding: 0 2%;
+        padding: 0;
         margin: .5em;
     }
 
-     #retour {
+    #retour {
         align-self: auto;
-     }
+    }
 
     #navigation {
         flex-direction: column;
