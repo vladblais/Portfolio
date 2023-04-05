@@ -123,3 +123,23 @@ section {
     width: 90%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 0;
+    margin: 0;
+  }
+  #expériences .container {
+    padding: 72px 0em 24px;
+  }
+
+  .card {
+    width: 240px;
+  }
+
+  .card figure {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+  }
+}
