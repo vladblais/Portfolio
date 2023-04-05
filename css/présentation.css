@@ -7,7 +7,8 @@
 }
 
 .title {
-    font-size: 2.6em;
+    font-size: 2.5em;
+    margin-bottom: 0em;
 }
 
 .title,
@@ -40,11 +41,23 @@
 
 @media screen and (max-width: 1366px) {
     .content {
-        width: 80%;
+        width: 85%;
     }
 
     .color {
         margin: 0;
+    }
+
+    .bg {
+        padding: 2em;
+    }
+
+    .text:first-child {
+        margin-top: 0;
+    }
+
+    .text:last-child {
+        margin-bottom: 0;
     }
 }
 
