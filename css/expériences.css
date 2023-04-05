@@ -71,6 +71,7 @@ section {
   margin-top: .2em;
   font-size: 1.5em;
   font-weight: bold;
+  text-align: center;
 }
 
 .card .content {
