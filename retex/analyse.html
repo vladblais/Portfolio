@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -5,8 +8,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Analyse</title>
+    <link rel="stylesheet" href="../css/retex.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -24,17 +27,19 @@
                         <li><a href="../contact.html" class="button">Contact</a></li>
                     </ul>
                 </div>
-                <a href="../pages_en/index_en.html"><img id="lang" src="../img/royaume-uni.png" alt="Anglais"></a>
+                <a id="lang_container" href="../pages_en/retex/analyse.html"><img id="lang" src="../img/royaume-uni.png" alt="Anglais"></a>
             </div>
             <div id="menu_deroulant">
                 <div class="dropdown">
-                    <img src="../img/menu.png" alt="menu">
+                    <div class="burger">
+                        <img src="../img/menu.png" alt="menu">
+                    </div>
                     <div class="dropdown-content">
                         <div class="links">
                             <ul>
                                 <li><a href="../présentation.html">A propos de moi</a></li>
                                 <li><a href="../expériences.html">Mes expériences</a></li>
-                                <li><a href="../contact.html" class="button">Contact</a></li>
+                                <li><a href="../contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,11 +48,54 @@
         </div>
     </nav>
 
-    <section class="container">
-        <H1 style="background: linear-gradient(to right,
-        var(--gradient-one) 0%,
-        var(--gradient-two) 100%);-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; font-size: 10em;">RATIO</H1>
+    <section>
+        <div id="tsparticles"></div>
+        <a href="../expériences.html" id="retour" class="button"><span><</span>Retour</a>
+        <div id="retex">
+            <div class="bg">
+                <div id="left">
+                    <div class="title">
+                        <p>Analyse d'entreprise</p>
+                    </div>
+                    <figure>
+                        <img src="../img/analyse.jpg" alt="CDiscount">
+                    </figure>
+                </div>
+                <div id="right">
+                    <div id="cdc">
+                        <h3>Cahier des charges</h3>
+                        <p>Réaliser l'analyse externe de l'entreprise CDiscount en groupe de 5. L'analyse doit se découper en trois parties: 
+                            une analyse générale et fonctionnelle, une analyse PESTEL, et une analyse de la concurrence élargie de Porter. 
+                            Un compte-rendu sourcé doit être produit comme résultat de l'analyse.</p>
+                    </div>
+                    <div id="outils_cpt">
+                        <div id="outils">
+                            <h3>Outils utilisés</h3>
+                            <ul>
+                                <li>Outil PESTEL</li>
+                                <li>Outil Porter</li>
+                                <li>Diagrame de GANTT</li>
+                            </ul>
+                        </div>
+                        <div id="competences">
+                            <h3>Compétences acquises</h3>
+                            <ul>
+                                <li>Utilisation d'un diagrame de GANTT</li>
+                                <li>Utilisation de l'outil PESTEL</li>
+                                <li>Utilisation de l'outil Porter</li>
+                                <li>Gérer un travail de groupe</li>
+                                <li>Produire un rapport d'analyse</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navigation">
+            <a href="./dev_web.html" class="button">Précédent</a>
+            <a href="../pdf/Analyse(fr).pdf" class="button" download="Analyse CDiscount">Télécharger</a>
+            <a href="./odomo.html" class="button">Suivant</a>
+        </div>
     </section>
 
     <footer>
@@ -77,6 +125,10 @@
         </div>
     </footer>
 
+
+    <script src="https://unpkg.com/css-doodle@0.34.5/css-doodle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 
